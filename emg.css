@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    font-family: "Linotype Univers", sans-serif;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1340px;
+    }
+  }
+  
+  body {
+      color: #1a1a1a;
+  }
+  
+  .header {
+      margin-bottom: 48px;
+      border-bottom: 2px solid #b3b3b3;
+      height: 78px;
+      line-height: 78px;
+      color: #666;
+  }
+    
+  .v-line {
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      margin: 0 8px;
+      height: 30px;
+      width: 1px;
+      background: #b3b3b3;
+      vertical-align: middle;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-weight: 700 !important;
+  }
+  
+  ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
+  
+  ol {
+    counter-reset: my-counter;
+    list-style: none;
+    padding-left: 50px;
+      margin-bottom: 48px;
+  }
+  
+  ol li {
+    margin: 0 0 24px 0;
+      padding: 7px 0 0 0;
+    counter-increment: my-counter;
+    position: relative;
+  }
+  
+  ol li::before {
+    content: counter(my-counter);
+    font-size: 16px;
+    position: absolute;
+    left: -50px;
+    line-height: 38px;
+    width: 36px;
+    height: 36px;
+    top: 0;
+      border: 1px solid #44697D;
+    background: #f7f7f7;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .question {
+      font-weight: bold;
+      margin-bottom: 16px;
+  }
+  
+  label {
+      margin-left: 16px;
+      font-size: 14px;
+      color: #333;
+  }
+  
+  .helper-text {
+      margin: 8px 0 0 16px;
+      font-size: 12px;
+      color: #333;
+  }
+  
+  .form-control {
+      padding: 16px;
+      border-color: #666;
+      border-radius: 5px;
+      height: auto;
+  }
+  
+  .benefits-box {
+      position: relative;
+      margin-bottom: 24px;
+      padding: 28px 32px 28px 104px;
+      background: #f6f6f6;
+      border-radius: 5px;
+      min-height: 104px;
+  }
+  
+  .benefit-icon {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+  }
+    
+  .subhead {
+      font-size: 1.25em;
+      margin-bottom: 32px;
+  }
+  
+  .form-group {
+      margin-bottom: 40px !important;
+  }
+  
+  .select {
+  }
+  
+  .alert-container {
+      margin-top: -24px;
+  }
+  
+  .alert-box {
+      padding: 15px;
+      background: #E5F4FF;
+      border-radius: 3px;
+      line-height: 24px;
+  }
+  
+  .arrow-up {
+      margin-left: 15px;
+      width: 0; 
+      height: 0; 
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #E5F4FF;
+  }
+  
+  .info-table {
+    margin-bottom: 128px;
+    border: 1px solid #e5e5e5;
+      border-radius: 5px;
+  }
+  
+  .info-table th {
+      font-weight: normal;
+      text-transform: uppercase;
+      background: #f9f9f9;
+      color: #666;
+      font-size: 14px;
+      border-bottom: none !important;
+  }
+  
+  .info-table th {
+      padding: 19px 24px 13px 24px;
+  }
+  
+  .info-table td {
+      padding: 16px 24px;
+  }
+  
+  .info-table td:last-child, .info-table th:last-child {
+  }
+  
+  .info-box {
+      margin-bottom: 48px;
+      /*padding: 32px;
+      background: #f4f4f4;*/
+      border-radius: 4px;
+  }
+  
+  .btn {
+      padding: 0 24px !important;
+      height: 48px !important;
+      line-height: 48px !important;
+      font-weight: 500 !important;
+      border-radius: 24px !important;
+  }
+  
+  .btn-primary {
+      background-color: #96151D !important;
+      border: none !important;
+  }
+  
+  .btn-outline-secondary {
+      background: transparent !important;
+      color: #1a1a1a !important;
+      border: 2px solid #1a1a1a !important;
+  }
+  
+  .sticky-section {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 48px;
+  }
+  
+  .faqs-container {
+      margin-top: 48px;
+      border-bottom: 1px solid #b3b3b3;
+      font-size: 14px;
+  }
+  
+  .faq-title {
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      font-weight: bold; 
+      color: #666;
+      font-size: 12px;
+  }
+  
+  .faq {
+      position: relative;
+      display: block;
+      border-top: 1px solid #b3b3b3;
+      padding: 16px 32px 16px 8px;
+      font-weight: bold;
+      color: #1a1a1a;
+  }
+  
+  .faq>.fas {
+      position: absolute;
+      top: 18px;
+      right: 8px;
+  }
+  
+  .faq-body {
+      padding: 0 8px 16px 8px;
+  }
+  
+  .convo {
+      border-left: 2px solid #96151D;
+      padding: 16px 0 16px 32px;
+      margin-bottom: 72px;
+  }
+  
+  .convo h1 {
+      margin-bottom: 24px;
+  }
+  
+  .convo h1, .convo h3, .convo h5 {
+      font-weight: 300 !important;
+  }
+  
+  .convo strong {
+      font-weight: bold;
+  }
+  
+  .small-text {
+      font-size: 14px;
+  }
+  
+  .help-box {
+      padding: 24px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+      background: #fff;
+  }
+  
+  .help-box .img-wrapper {
+      float: left;
+      margin-right: 24px;
+      width: 48px;
+      height: 48px;
+  }
+  
+  .help-box h6 {
+      margin: 2px 0 24px;
+      line-height: 24px;
+  }
+  
+  .help-box ul {
+      margin-left: 16px;
+  }
+  
+  .summary-box {
+      margin-bottom: 72px;
+      padding: 24px;
+      background: #f6f6f6;
+  }
+  
+  .bar-label {
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+  }
+  
+  .key-bar {
+      width: 56px;
+      height: 5px;
+      margin-bottom: 16px;
+      border-radius: 2px;
+  }

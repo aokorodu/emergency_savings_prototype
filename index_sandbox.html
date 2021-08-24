@@ -1,0 +1,76 @@
+<style>
+  .container {
+    position: relative;
+    padding: 1em;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    transition: background-color 250ms;
+  }
+
+  .bold {
+    font-weight: bold;
+    margin: 0 5px;
+  }
+
+  .highlighted {
+    background-color: rgba(1, 116, 201, 0.07);
+  }
+
+  .outline {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .radio {
+    background: black;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+
+  .checked {
+    opacity: 1;
+  }
+
+  input[type="text"] {
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #amount-input {
+    width: 100px;
+  }
+
+  #duration-input {
+    width: 60px;
+  }
+</style>
+<div id="container" class="container">
+  <div class="outline">
+    <div class="radio"></div>
+  </div>
+  <div id="amount-text-holder">
+    <input type="text" id="amount-input" class="bold" />
+  </div>
+  <div>will cover you for about</div>
+  <div id="duration-text-holder">
+    <input type="text" id="duration-input" class="month-input bold" />
+  </div>
+  <div class="bold">months</div>
+  <div>of expenses</div>
+</div>

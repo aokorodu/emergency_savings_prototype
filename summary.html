@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Emergency Savings</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="emg.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 48px;">
+	<div class="container">
+    <div class="row">
+      <div class="col-8">
+				<div class="convo">
+					<h1>Your target savings amount for your Rainy Day fund is <strong><span id="target-savings-amount">$34,000</span></strong>.</h1>
+					<h5 style="line-height: 1.4em;"><span id="total-descriptive-text">$00</span> will cover you for about <span id="months-descriptive-text">0.0</span> months of expenses and is <span id="range-description">equal to the high end of the</span> recommended range. You chose to split your emergency savings between <span id="cash-descriptive-text">$000</span> in cash and <span id="accessible-descriptive-text">$500</span> in accessible investments.</h5>
+				</div>
+				<h5 style="margin-bottom: 16px;">You chose to split your emergency savings between:</h5>
+				<div class="summary-box">
+					
+          <!--Bar Placeholder-->
+          <progress-component id="progress-component" cash='4000' total='10000'></progress-component>
+					<div style="height: 12px; background: #ddd; border-radius: 4px; margin-bottom: 16px;"></div>
+					<div class="bar-label" style="float: right;"><span id="accessible-investments">$0</span> Accessible Investments</div>
+					<div class="bar-label"><span id="cash-amount">$0</span> Cash</div>
+					<!--End Bar Placeholder-->
+					
+					<div class="row">
+          	<div class="col-6">
+            	<div class="key-bar" style="background: #A8B400;"></div>
+							<h6>Cash &amp; Cash Equivalents</h6>
+							<ul>
+								<li>Checking</li>
+								<li>Savings</li>
+								<li>Money market account</li>
+								<li>Other cash equivalents</li>
+							</ul>
+          	</div>
+          	<div class="col-6">
+            	<div class="key-bar" style="background: #0098DB;"></div>
+							<h6>Accessible Investments</h6>
+							<ul>
+								<li>Retail brokerage accounts</li>
+								<li>Original contributions to Roth IRAs</li>
+								<li>Other quickly accessible, penalty-free holdings</li>
+							</ul>
+          	</div>
+        	</div>
+				</div> <!--END .summary-box-->
+				
+				<h4 style="margin-bottom: 24px;">Next steps</h4>
+				<p style="margin-bottom: 8px;"><strong>Have enough saved for a rainy day, but too much extra cash?</strong></p>
+				<p style="margin-bottom: 8px;">See how your options for cash stack up between investment accounts and paying down debt.</p>
+				<button class="btn btn-outline-secondary" style="margin-bottom: 48px;" data-toggle="modal" data-target="#disabledModal">Try the Next Dollar Optimizer Tool</button>
+				
+				<p style="margin-bottom: 8px;"><strong>Want help saving toward your rainy day target amount?</strong></p>
+				<p style-"margin-bottom: 8px;">You may want to work with your advisor on how to make sure you are saving enough.</p>
+				<button class="btn btn-outline-secondary"  data-toggle="modal" data-target="#disabledModal" style="margin-bottom: 128px;">Contact your advisor</button>
+				
+			</div>
+			<div class="col-1"></div>
+      <div class="col-3">
+        <div class="sticky-section">
+					<button style="margin-bottom: 24px;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#completeModal">Done</button>
+          <a class="btn btn-outline-secondary btn-block" href="./index.html">Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<!-- Modal -->
+  <div class="modal fade" id="completeModal" tabindex="-1" aria-labelledby="doneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doneModalLabel">Please return to the survey</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Thank you for using the prototype. Please click "Next" in the UserTesting window.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- Modal -->
+  <div class="modal fade" id="disabledModal" tabindex="-1" aria-labelledby="doneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doneModalLabel">Feature Disabled</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          For the purposes of the current test, this feature is disabled.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="src/components/progress-component.js"></script>
+
+<script type="module">
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+  });
+
+  const savingsPerMonth = 5400;
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const cash = Number(urlParams.get('cash'));
+  const total = Number(urlParams.get('total'));
+  const accessInv = total - cash;
+  const months = (total/savingsPerMonth).toFixed(1);
+
+  const progressComponent = document.getElementById('progress-component')
+
+  // target savings amount - big bold text at top of page
+  const targetSavingsAmountText = document.getElementById('target-savings-amount');
+
+  // descriptive paragraph text
+  const totalDescriptiveText = document.getElementById('total-descriptive-text');
+  const monthsDescriptiveText = document.getElementById('months-descriptive-text');
+  const cashDescriptiveText = document.getElementById('cash-descriptive-text');
+  const accessibleDescriptiveText = document.getElementById('accessible-descriptive-text');
+  const rangeDescriptionText = document.getElementById('range-description');
+  // text under progress bar - cash amount and accessible inv.
+  const accessibleInvestmentText = document.getElementById('accessible-investments');
+  const cashAmountText = document.getElementById('cash-amount');
+
+  // populate text amounts
+  targetSavingsAmountText.innerText = formatter.format(total);
+  totalDescriptiveText.innerText = formatter.format(total);
+  monthsDescriptiveText.innerText = months;
+  cashDescriptiveText.innerText = formatter.format(cash);
+  accessibleDescriptiveText.innerText = formatter.format(accessInv);
+  accessibleInvestmentText.innerText = formatter.format(accessInv);
+  cashAmountText.innerText = formatter.format(cash);
+
+  // populate range description text
+  let str = "";
+  const higherStr = 'is higher than the high end of the';
+  const equalStr = 'is equal to the high end of the';
+  const lowerStr = 'is lower than the low end of the';
+  const withinStr = 'is within the the';
+
+  if(total > 26000){
+    str = higherStr;
+  } else if(total == 26000){
+    str = equalStr;
+  } else if(total >= 11400 && total < 26000){
+    str = withinStr
+  } else if(total < 11400){
+    str = lowerStr
+  }
+
+  rangeDescriptionText.innerText = str;
+
+
+  // set progress for progress component
+  progressComponent.setProgress(Number(cash)/Number(total) * 100)
+
+
+</script>
+</body>
+</html>

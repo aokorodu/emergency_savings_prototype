@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Emergency Savings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="emg.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="padding-top: 48px">
+    <!--<div class="header">
+    <div class="container">
+      <img src="./assets/vanguard.svg" alt="Vanguard">
+      <div class="v-line"></div>
+      Personal Advisor Services
+    </div>
+  </div>-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="convo">
+            <h1>
+              Your range for total emergency savings should be between
+              <strong>$11,400</strong> and <strong>$26,000</strong>.
+            </h1>
+            <h3>
+              At least $2,700 and up to $16,200 should be cash, the rest in
+              accessible investments.
+            </h3>
+          </div>
+
+          <div style="margin-bottom: 48px">
+            <div id="content">
+              <h5>
+                First, determine the total amount you want to have in your rainy
+                day fund.
+              </h5>
+              <p style="margin-bottom: 16px">
+                This is the range we recommend based on potential job loss
+                duration and your household expenses. Selecting your total
+                emergency savings target is personal, based on where you are in
+                your life or how prepared you want to be.
+              </p>
+              <div style="margin-bottom: 40px">
+                <a
+                  data-toggle="collapse"
+                  href="#help-me-choose-1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >How do I choose the right amount?
+                  <i
+                    class="fas fa-chevron-down"
+                    style="position: relative; top: 1px"
+                  ></i
+                ></a>
+                <div class="collapse" id="help-me-choose-1">
+                  <div
+                    style="margin-top: 16px; padding: 24px; background: #f6f6f6"
+                  >
+                    <p>
+                      The main goal of your emergency fund is to prepare for
+                      things you can’t predict. But thinking ahead to potential
+                      scenarios can help ensure you’re prepared. Consider the
+                      following when deciding whether to target the higher end
+                      or lower end of your recommended savings range.
+                    </p>
+                    <div class="row" style="margin-bottom: 24px">
+                      <div class="col-6">
+                        <div class="help-box">
+                          <div class="img-wrapper">
+                            <img src="./assets/faucet.png" height="48" alt="" />
+                          </div>
+                          <h6>
+                            Think of upcoming expenses you might have soon
+                          </h6>
+                          <ul>
+                            <li>A replacement hot water heater</li>
+                            <li>New brake pads for your car</li>
+                            <li>An unplanned family visit</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="help-box">
+                          <div class="img-wrapper">
+                            <img src="./assets/jobs.png" height="48" alt="" />
+                          </div>
+                          <h6>
+                            Consider any potential instability in either
+                            partner’s job
+                          </h6>
+                          <ul>
+                            <li>If there has been or may be any layoffs</li>
+                            <li>
+                              If your current company offers (or does not offer)
+                              a severance package
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="help-box">
+                          <div class="img-wrapper">
+                            <img src="./assets/graph.png" height="48" alt="" />
+                          </div>
+                          <h6>
+                            Understand how market volatility might impact your
+                            available funds
+                          </h6>
+                          When the market is down, your investment balance might
+                          be lower than you'd like when you need funds.
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="help-box">
+                          <div class="img-wrapper">
+                            <img src="./assets/cards.png" height="48" alt="" />
+                          </div>
+                          <h6>
+                            Explore how cash and investments work together for
+                            you
+                          </h6>
+                          Having cash on hand to draw on while markets rebound
+                          is a smart way to stay prepared and still take
+                          advantage of growth.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Total selection control goes here-->
+              <div class="radio-bar-holder">
+                <radio-bar-component
+                  amount="11400"
+                  duration="2.1"
+                ></radio-bar-component>
+                <radio-bar-component
+                  amount="16000"
+                  duration="3"
+                ></radio-bar-component>
+                <radio-bar-component
+                  amount="22000"
+                  duration="4"
+                ></radio-bar-component>
+                <radio-bar-component
+                  amount="26000"
+                  duration="4.8"
+                ></radio-bar-component>
+                <custom-bar-component></custom-bar-component>
+              </div>
+
+              <h5>
+                Now, adjust how you split your savings between cash and
+                investments.
+              </h5>
+              <p style="margin-bottom: 16px">
+                Having a portion of your rainy day savings in cash is still
+                smart, because it is the most quickly accessible. Cash has the
+                lowest possible risk, but also carries little to no opportunity
+                for returns.
+              </p>
+              <div style="margin-bottom: 40px">
+                <a
+                  data-toggle="collapse"
+                  href="#help-me-choose-2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >Why split my rainy day savings?
+                  <i
+                    class="fas fa-chevron-down"
+                    style="position: relative; top: 1px"
+                  ></i
+                ></a>
+                <div class="collapse" id="help-me-choose-2">
+                  <div
+                    style="
+                      padding: 24px;
+                      margin-top: 16px;
+                      border-radius: 5px;
+                      background: #f6f6f6;
+                    "
+                  >
+                    <div class="row" style="margin-bottom: 32px">
+                      <div class="col-6">
+                        <h6 style="margin-bottom: 16px">
+                          Hypothetical Growth of $10,000
+                        </h6>
+                        <img
+                          src="./assets/Chart.png"
+                          width="100%"
+                          alt="Line graph has dollar amounts on the Y axis and years on the X axis and shows the hypothetical growth of $10,000 to $17,081 over 10 years, with an annual return of 5.5%."
+                        />
+                      </div>
+                      <div class="col-6">
+                        <p style="margin-top: 32px">
+                          Many investments are accessible when you need them, so
+                          why keep your money on the sidelines? Over 10 years,
+                          $10,000 invested with an annual return of 5.5% would
+                          be worth $17,081 today. This is just a sample of how
+                          an investment can grow.
+                        </p>
+                      </div>
+                    </div>
+                    <p class="small-text" style="margin: 0">
+                      <em
+                        >Note: This illustration depicts the investment return
+                        of a hypothetical portfolio over a 10-year period. The
+                        hypothetical portfolio has a staring value of $10,000
+                        and grows by an average of 5.5.% annually. The portfolio
+                        balances shown are hypothetical and do not reflect any
+                        particulat investment. The rate is not guaranteed and
+                        the value of a true investment would fluctuate. The
+                        final account balances do not reflect any taxes or
+                        penalties that might be due upon distribution. Costs are
+                        one factor impactiong total returns. There may be other
+                        material differences between products that must be
+                        considered prior to investing.</em
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="content">
+                <h4>Adjust what you plan to keep in cash:</h4>
+                <div class="slider-container disabled">
+                  <div id="row-container">
+                    <increment-button sign="-"></increment-button>
+                    <div class="slider-content">
+                      <!-- slider amounts-->
+                      <div class="slider-titles slider-titles-amounts">
+                        <div class="slider-amount">$0</div>
+                        <div id="slider-amount-max" class="slider-amount">
+                          $24,000
+                        </div>
+                      </div>
+
+                      <!-- slider holder-->
+                      <custom-slider minimum="2700"></custom-slider>
+
+                      <!-- slider titles-->
+                      <div class="slider-titles">
+                        <div>cash</div>
+                        <div>accessible investments</div>
+                      </div>
+
+                      <!-- slider inputs-->
+                      <div class="input-holders">
+                        <input
+                          type="text"
+                          id="cash-amount"
+                          class="input-text"
+                          name="cash-amount"
+                        />
+                        <input
+                          type="text"
+                          id="invest-amount"
+                          class="input-text"
+                          name="invest-amount"
+                        />
+                      </div>
+
+                      <!-- error text-->
+                      <div id="error-text" class="error hidden">
+                        Less than recommended minimum of $2,700
+                      </div>
+                    </div>
+                    <increment-button sign="+"></increment-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 128px">
+            <div class="col-6">
+              <div
+                style="
+                  width: 56px;
+                  height: 5px;
+                  background: #a8b400;
+                  margin-bottom: 16px;
+                  border-radius: 2px;
+                "
+              ></div>
+              <strong>Cash &amp; Cash Equivalents</strong>
+              <ul>
+                <li>Checking</li>
+                <li>Savings</li>
+                <li>Money market account</li>
+                <li>Other cash equivalents</li>
+              </ul>
+              <br />
+              <p>
+                <strong
+                  >It’s good to have cash on hand for unexpected and immediate
+                  expenses.</strong
+                >
+                Half a month’s expenses is the baseline for our recommendation,
+                but some people feel comfortable with 2 or 3 times that.
+              </p>
+            </div>
+            <div class="col-6">
+              <div
+                style="
+                  width: 56px;
+                  height: 5px;
+                  background: #0098db;
+                  margin-bottom: 16px;
+                  border-radius: 2px;
+                "
+              ></div>
+              <strong>Accessible Investments</strong>
+              <ul>
+                <li>Retail brokerage accounts</li>
+                <li>Original contributions to Roth IRAs</li>
+                <li>Other quickly accessible, penalty-free holdings</li>
+              </ul>
+              <br />
+              <p>
+                <strong
+                  >Your accessible investments are there in case of an income
+                  loss.</strong
+                >
+                This portion of your savings won’t be needed often, if ever, but
+                provides peace of mind. You can choose investments that match
+                your risk comfort level and let your money work for you.
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+          <div class="sticky-section">
+            <div
+              id="continue-button"
+              style="margin-bottom: 24px"
+              class="btn btn-primary btn-block disabledButton"
+            >
+              Continue
+            </div>
+            <a
+              class="btn btn-outline-secondary btn-block"
+              >Back</a
+            >
+            <div class="faqs-container">
+              <div class="faq-title">Frequently Asked Questions</div>
+              <a
+                class="faq"
+                data-toggle="collapse"
+                href="#faq1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                >How did we get this target savings range?<i
+                  class="fas fa-chevron-down"
+                ></i
+              ></a>
+              <div class="collapse faq-body" id="faq1">
+                We use artificial intelligence and a custom algorithm to
+                calculate your individual target. The calculation is based on
+                personal factors like your income and expense data from your
+                Investor Profile, and the answers to questions about your job
+                and education. This information is combined with historical data
+                on job loss and recovery to help to estimate savings needed to
+                cover you for a potential loss of income.
+              </div>
+              <a
+                class="faq"
+                data-toggle="collapse"
+                href="#faq2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                >What are emergency savings options beyond savings accounts?<i
+                  class="fas fa-chevron-down"
+                ></i
+              ></a>
+              <div class="collapse faq-body" id="faq2">
+                Accounts that can provide both security and returns:
+                <ul>
+                  <li>
+                    Money market &ndash; investments that are like cash, with
+                    higher returns.
+                  </li>
+                  <li>
+                    General investment accounts &ndash; including ETFs, stocks,
+                    this money has been taxed, and returns are taxed, but it can
+                    grow at a higher rate than money markets or high-yield
+                    savings accounts.
+                  </li>
+                  <li>
+                    Roth IRAs &ndash; Contributions to a Roth IRA can be
+                    withdrawn without tax or penalty and, if the emergency
+                    you’re saving for never arises, you’ll enjoy tax-free growth
+                    and progress toward your long-term retirement goals.
+                  </li>
+                  <li>
+                    HSAs &ndash; Contributions to your HSA are yours to use,
+                    over your lifetime. They're only eligible to use for medical
+                    expenses in most cases, but can come in handy for an
+                    unexpected or large medical bill.
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="faq"
+                data-toggle="collapse"
+                href="#faq3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                >Should I be concerned about my emergency funds fluctuating in
+                value?<i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="collapse faq-body" id="faq3">
+                Over time, no. But if you need to use funds when markets are
+                down, it can be good to have cash reserves as a buffer. Look at
+                how the investments you earmark for your emergency fund are
+                allocated. If the assets are heavily invested in equities or
+                other investments that fluctuate in value, you may want to
+                consider:
+                <ul>
+                  <li>
+                    Increasing your total target savings amount to be at the
+                    higher end of the range
+                  </li>
+                  <li>
+                    Adjusting your total target savings to include a greater
+                    percentage of cash
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="faq"
+                data-toggle="collapse"
+                href="#faq4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                >How should I handle using my emergency fund when I need it?<i
+                  class="fas fa-chevron-down"
+                ></i
+              ></a>
+              <div class="collapse faq-body" id="faq4">
+                If you want recommendations on withdrawal order or replenishment
+                of your funds, please consult your advisor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/main.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="26px" viewBox="0 0 31 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Target-Adjustment-Page" transform="translate(-210.000000, -778.000000)">
+            <g id="Slider" transform="translate(71.000000, 757.000000)">
+                <g id="Bar-Chart-Copy" transform="translate(40.000000, 0.000000)">
+                    <g id="Dragger-Copy" transform="translate(99.000000, 21.000000)">
+                        <rect id="Rectangle" stroke="#1A1A1A" fill="#1A1A1A" x="0.5" y="0.5" width="30" height="25" rx="4"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" x="10" y="7" width="1" height="12"></rect>
+                        <rect id="Rectangle-Copy" fill="#FFFFFF" x="15" y="7" width="1" height="12"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="20" y="7" width="1" height="12"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
